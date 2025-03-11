@@ -1,0 +1,68 @@
+:root{
+  --primary:#25AC94;
+  --alabaster:#FBFBFB;
+  --codgray:#070707;
+  --edward:#9FB4B0;
+  --gray:#848484;
+  --Manrope : "Manrope";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+.redButton{
+    width: 100%;
+    padding: 20px 0;
+    font-size: 24px;
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: var(--alabaster);
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+ul,ol{
+  list-style-type: none;
+}
+/* #Banner_section{
+    width: 100%;
+    height: calc(100vh-100px);
+    font-family:  Arial, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+} */
+/* .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #c40c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  */

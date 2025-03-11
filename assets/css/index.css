@@ -1,0 +1,542 @@
+header {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  position: relative;
+}
+header nav .menu {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 16px;
+}
+header nav .menu ul {
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+header nav .menu ul li {
+  font-size: 14px;
+}
+header nav .menu ul li:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+header nav .menu ul li:nth-child(5) {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+}
+header nav .menu ul li .iconWarper {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .menu ul .coustomPc {
+  position: relative;
+}
+header nav .menu ul .coustomPc .submenu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  z-index: 888;
+}
+header nav .menu ul .coustomPc .submenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  background-color: transparent;
+}
+header nav .menu ul .coustomPc .submenu ul li {
+  text-align: left;
+}
+header nav .menu ul .coustomPc:hover .submenu {
+  display: block;
+}
+header nav .menu ul .company {
+  position: relative;
+}
+header nav .menu ul .company .companySubmenu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  z-index: 888;
+}
+header nav .menu ul .company .companySubmenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  background-color: transparent;
+}
+header nav .menu ul .company .companySubmenu ul li {
+  text-align: left;
+}
+header nav .menu ul .company:hover .companySubmenu {
+  display: block;
+}
+header nav .smMenu {
+  display: none;
+}
+header nav .asideMenu {
+  position: fixed;
+  width: 300px;
+  height: -moz-max-content;
+  height: max-content;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: 9999;
+  display: none;
+  padding: 50px 20px 0 20px;
+}
+header nav .asideMenu .closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+header nav .asideMenu ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px;
+}
+header nav .asideMenu ul li a {
+  color: var(--alabaster);
+}
+header nav .asideMenu ul li a:hover {
+  color: var(--primary);
+}
+
+#Banner_section {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+#Banner_section .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#Banner_section .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+#Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText {
+  width: 60%;
+}
+#Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText h1 {
+  font-size: 10.5vw;
+  text-align: left;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-family: Bebas Neue;
+  max-width: 100%;
+  letter-spacing: 5px;
+}
+#Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText h1 span {
+  font-family: Bebas Neue;
+  color: var(--alabaster);
+}
+#Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper {
+  width: 40%;
+  margin-top: 30px;
+}
+#Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper button {
+  font-size: 34px;
+  cursor: pointer;
+  background-color: #004531;
+}
+#Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper button:hover {
+  background-color: var(--primary);
+}
+#Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerImage {
+  width: 40%;
+  height: 100%;
+}
+#Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerImage img {
+  width: 100%;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  height: 100%;
+  -o-object-fit: initial;
+     object-fit: initial;
+}
+#Banner_section .swiper .slide1 {
+  background-color: #000099;
+  background-image: url("../image/bg1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Banner_section .swiper .slide2 {
+  background-color: #000099;
+  background-image: url("../image/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Banner_section .swiper .slide3 {
+  background-color: #000099;
+  background: rgb(255, 255, 255);
+  background: rgb(0, 69, 49);
+  background: linear-gradient(204deg, #004531 0%, #00073c 59%, #7e00ab 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-pagination {
+  position: absolute !important;
+  top: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: var(--alabaster);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: var(--primary);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary);
+}
+
+.myCustompegination {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#exploreProducts {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 50px 10px;
+  background-image: url("../image/productSlideBG.webp");
+  background-size: cover;
+  background-position: center;
+}
+#exploreProducts .productContainer {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+#exploreProducts .productContainer .productHeading h2 {
+  font-size: 7.5vw;
+  text-align: left;
+  line-height: 1;
+  text-transform: uppercase;
+  color: white;
+  font-family: Bebas Neue;
+}
+#exploreProducts .productContainer .productHeading h2 span {
+  color: red;
+}
+#exploreProducts .productContainer .mySwiper2 #productCardWarpper .product-card {
+  width: 22%;
+  padding: 5px;
+  background-color: #007aff;
+}
+#exploreProducts .productContainer .mySwiper2 #productCardWarpper .product-card .product-image {
+  width: 100%;
+  min-width: 100%;
+  height: 250px;
+  min-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid red;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #Banner_section .swiper .swiper-wrapper .swiper-slide {
+    padding: 10px;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top: 50px;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText {
+    width: 100%;
+    order: 2;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText h1 {
+    font-size: 18vw;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-family: Bebas Neue;
+    max-width: 100%;
+    letter-spacing: 5px;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText h1 span {
+    font-family: Bebas Neue;
+    color: var(--alabaster);
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper {
+    width: 100%;
+    margin-top: 30px;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper button {
+    font-size: 34px;
+    cursor: pointer;
+    background-color: #004531;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper button:hover {
+    background-color: var(--primary);
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerImage {
+    width: 40%;
+    height: 100%;
+    order: 1;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerImage img {
+    width: 100%;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    height: 100%;
+    -o-object-fit: initial;
+       object-fit: initial;
+  }
+}
+@media only screen and (max-width: 1022px) {
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  header nav .menu {
+    display: none;
+  }
+  header nav .smMenu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav .smMenu span {
+    cursor: pointer;
+  }
+}
+@media (min-width: 600px) {
+  #Banner_section .swiper .swiper-wrapper .swiper-slide {
+    padding: 10px;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top: 50px;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText {
+    width: 100%;
+    order: 2;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText h1 {
+    font-size: 18vw;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-family: Bebas Neue;
+    max-width: 100%;
+    letter-spacing: 5px;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText h1 span {
+    font-family: Bebas Neue;
+    color: var(--alabaster);
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper {
+    width: 100%;
+    margin-top: 30px;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper button {
+    font-size: 34px;
+    cursor: pointer;
+    background-color: #004531;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper button:hover {
+    background-color: var(--primary);
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerImage {
+    width: 40%;
+    height: 100%;
+    order: 1;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerImage img {
+    width: 100%;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    height: 100%;
+    -o-object-fit: initial;
+       object-fit: initial;
+  }
+}
+@media (min-width: 1024px) {
+  #Banner_section {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  #Banner_section .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText {
+    width: 60%;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText h1 {
+    font-size: 10.5vw;
+    text-align: left;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-family: Bebas Neue;
+    max-width: 100%;
+    letter-spacing: 5px;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText h1 span {
+    font-family: Bebas Neue;
+    color: var(--alabaster);
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper {
+    width: 40%;
+    margin-top: 30px;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper button {
+    font-size: 34px;
+    cursor: pointer;
+    background-color: #004531;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerText .btnwarpper button:hover {
+    background-color: var(--primary);
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerImage {
+    width: 40%;
+    height: 100%;
+  }
+  #Banner_section .swiper .swiper-wrapper .swiper-slide .innerSlide .bannerImage img {
+    width: 100%;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    height: 100%;
+    -o-object-fit: initial;
+       object-fit: initial;
+  }
+  #Banner_section .swiper .slide1 {
+    background-color: #000099;
+    background-image: url("../image/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #Banner_section .swiper .slide2 {
+    background-color: #000099;
+    background-image: url("../image/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #Banner_section .swiper .slide3 {
+    background-color: #000099;
+    background: rgb(255, 255, 255);
+    background: rgb(0, 69, 49);
+    background: linear-gradient(204deg, #004531 0%, #00073c 59%, #7e00ab 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}/*# sourceMappingURL=index.css.map */
