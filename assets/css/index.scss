@@ -163,8 +163,11 @@ header {
 
 
 
+
+
 // ======banner section======
 #Banner_section {
+    // display: none;
     width: 100%;
     height: 100vh;
     font-family: Arial, sans-serif;
@@ -189,15 +192,17 @@ header {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
+
                 .innerSlide {
                     width: 100%;
                     height: max-content;
                     padding-left: 50px;
                     display: flex;
                     align-items: center;
-                    .bannerText{
+
+                    .bannerText {
                         width: 60%;
+
                         h1 {
                             font-size: 10.5vw;
                             text-align: left;
@@ -207,40 +212,42 @@ header {
                             font-family: Bebas Neue;
                             max-width: 100%;
                             letter-spacing: 5px;
-    
+
                             span {
                                 font-family: Bebas Neue;
                                 color: var(--alabaster);
                             }
                         }
-    
+
                         .btnwarpper {
                             width: 40%;
                             margin-top: 30px;
-    
+
                             button {
                                 font-size: 34px;
                                 cursor: pointer;
                                 background-color: #004531;
-    
+
                                 &:hover {
                                     background-color: var(--primary);
                                 }
                             }
-    
+
                         }
                     }
-                    .bannerImage{
+
+                    .bannerImage {
                         width: 40%;
                         height: 100%;
-                        img{
+
+                        img {
                             width: 100%;
                             max-width: max-content;
                             height: 100%;
-                           object-fit: initial;
+                            object-fit: initial;
                         }
                     }
-                   
+
 
                 }
             }
@@ -256,11 +263,13 @@ header {
         }
 
         .slide2 {
-            background-color: #000099;
-            background-image: url('../image/bg2.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            // background-color: #000099;
+            // background-image: url('../image/ng3.png');
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            background: linear-gradient(#000000a1, #00000098), 
+                url('../image/ng3.png') center/cover no-repeat;
 
         }
 
@@ -269,14 +278,59 @@ header {
             background: rgb(255, 255, 255);
             background: rgb(0, 69, 49);
             background: linear-gradient(204deg, #004531 0%, #00073c 59%, #7e00ab 100%);
-
-            background-position: center;
+            background-image: url('../image/bg4.jpg');
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
 
         }
     }
 
+}
+// ======test section======
+.test_warpper{
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+    background-color: #236bd8;
+    display: flex;
+    flex-wrap: wrap;
+    .itemcard{
+        width: 300px;
+        height: max-content;
+        padding: 10px;
+        border: 1px solid gray;
+        .productImage{
+            width: 100%;
+            height: 220px;
+            background-color: white;
+        }
+        .product_title{
+            width: 100%;
+            height: 60px;
+            background-color: #6969ee;
+        }
+        .product_category{
+            width: 100%;
+            height: 40px;
+            background-color: #255744;
+        }
+        .productPrice{
+            width: 100%;
+            border: #5757f1;
+            display: flex;
+            .old_price{
+                width: 100%;
+                height: 40px;
+                background-color: #df0239;
+            }
+            .new_price{
+                width: 100%;
+                height: 40px;
+                background-color: #f7557e;
+            }
+        }
+    }
 }
 
 
@@ -313,6 +367,282 @@ header {
     top: 0;
     right: 0;
 }
+
+// =====choose category=====
+#buildOverview {
+    position: relative ;
+    padding: 50px 0px;
+    // background-image: url('../image/bg-5.jpg');
+    background-color: var(--gray3);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: var(--alabaster);
+// ========modal section=======
+#component_modal{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 9999;
+    .cancel{
+        background-color: red;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+    .partsHeader{
+        width: 100%;
+        height: max-content;
+        background-color: var(--gray2);
+        h3 {
+            font-size: 36px;
+            font-family: var(--BebasNeue);
+            color: var(--alabaster);
+            text-align: center;
+        }
+
+        .navNtab {
+            width: 100%;
+            ol {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0;
+                align-items: center;
+                justify-content: center;
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                    .tab-btn {
+                        padding: 10px 20px;
+                        border: none;
+                        background: var(--gray2);
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                    .tab-btn.active {
+                        background: var(--gray3);
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        .productControler{
+            width: 100%;
+            margin-top: 50px;
+            padding-top: 10px;
+            background-color: var(--gray2);
+            border-radius: 10px;
+            .urlWarpper{
+                .urlbox{
+                    width: 98%;
+                    margin: 0 auto;
+                    background-color: var(--gray3);
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    padding: 5px;
+                    padding-top: 8px;
+                    gap: 15px;
+                    input{
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        color: var(--alabaster);
+                        padding-bottom: 5px;
+                        color: var(--primary);
+                    }
+                }
+                .markUpbox{
+                    width: 100%;
+                    padding: 10px;
+                    display: flex;
+                    .markUpIcon{
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        span{
+                            cursor: pointer;
+                        }
+                    }
+                    .markupBtn{
+                        width: 50%;
+                        display: flex;
+                        gap: 20px;
+                        .divASbtn{
+                            width: max-content;
+                            border: 1px solid var(--gray3);
+                            padding: 5px 10px;
+                            display: flex;
+                            gap: 10px;
+                            &:hover{
+                                cursor: pointer;
+                                border: 1px solid var(--primary);
+                            }
+                            &:hover :nth-child(2){
+                                color: var(--primary);
+                                text-decoration: underline;
+                            }
+
+                        }
+                    }
+                }
+            }
+            .CompitibleNotes{
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                overflow: hidden;
+                .greenSection{
+                    width: 100%;
+                    background-color: var(--primary);
+                    display: flex;
+                    padding: 10px;
+                    gap: 15px;
+                }
+                .skySection{
+                    width: 100%;
+                    background-color: #236bd8;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 15px;
+                    padding: 5px 15px;
+                    a{
+                        color: var(--alabaster);
+                        &:hover{
+                            color: var(--primary);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .tab_Content_Warpper {
+            .tab-content {
+                display: none;
+                padding: 20px;
+                width: 100%;
+
+                .cardWarpper {
+                    display: flex;
+                    gap: 0 !important;
+                    flex-wrap: wrap;
+                    .row{
+                        width: 100%;
+                        display: flex;
+                        gap: 20px;
+                        border-bottom: 1px solid gray;
+                        .card{
+                            width: 20%;
+                            padding: 10px 0;
+                            
+                            flex: 1;
+                            .rowHeading{
+                                font-size: 14px;
+                                font-weight: 300;
+                                color: gray;
+                            }
+                            .componentName{
+                                font-size: 16px;
+                                font-weight: 800;
+                                color: var(--primary);
+                            }
+                            .selectionBTN{
+                                padding: 0 10px 5px 10px;
+                                border-radius: 5px;
+                                background-color: var(--edward);
+                                color: #fff;
+                                &:hover{
+                                    background-color: var(--primary);
+                                    color: var(--alabaster);
+                                }
+                            }
+                        }
+                        .selection{
+                            flex-grow: 3;
+                        }
+                        &:nth-child(2){
+                            flex-grow: 1;
+                        }
+                    }
+
+                    .componentCard {
+                        width: 250px;
+                        height: 250px;
+                        border: 1px solid gray;
+                        background-color: #03ad7d31;
+                        border-radius: 10px;
+                        transition: .3s all linear;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #05ffb885;
+                        }
+                    }
+                }
+                .cardContiner{
+                    
+                    .componentCard {
+                        width: max-content;
+                        // height: 200px;
+                        border: 1px solid #25AC94;
+                        // background-color: #25ac9341;
+                        background-image: url('../image/cardBg.png');
+                        background-repeat: no-repeat;
+                        background-position: top;
+                        background-size: 40% 60%;
+                        border-radius: 10px;
+                        transition: .3s all linear;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        padding: 35px 25px;
+                        text-align: center;
+                        &:hover{
+                            background-color: #05ffb885;
+                        }
+                        h3{
+                            font-size: 36px;
+                            font-family: var(--BebasNeue);
+                        }
+                        h5{
+                            font-size: 20px;
+                        }
+                        .editBox{
+                            margin-top: 10px;
+                           
+                        }
+                    }
+                }
+            }
+            .tab-content.active {
+                display: block;
+            }
+        }
+    }
+}
+
 
 //   =======products========
 #exploreProducts {
@@ -367,13 +697,37 @@ header {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:480px) {
+    header {
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+
+            .menu {
+                display: none;
+            }
+
+            .smMenu {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 
     #Banner_section {
         .swiper {
             .swiper-wrapper {
                 .swiper-slide {
                     padding: 10px;
+
                     .innerSlide {
                         width: 100%;
                         height: max-content;
@@ -382,9 +736,11 @@ header {
                         align-items: center;
                         padding: 10px;
                         padding-top: 50px;
-                        .bannerText{
+
+                        .bannerText {
                             width: 100%;
                             order: 2;
+
                             h1 {
                                 font-size: 18vw;
                                 text-align: center;
@@ -394,49 +750,259 @@ header {
                                 font-family: Bebas Neue;
                                 max-width: 100%;
                                 letter-spacing: 5px;
-        
+
                                 span {
                                     font-family: Bebas Neue;
                                     color: var(--alabaster);
                                 }
                             }
-        
+
                             .btnwarpper {
-                                width: 100%;
+                                width: 80%;
+                                margin: 0 auto;
                                 margin-top: 30px;
-        
+
                                 button {
-                                    font-size: 34px;
+                                    font-size: 26px;
+                                    padding: 8px;
                                     cursor: pointer;
                                     background-color: #004531;
-        
+
                                     &:hover {
                                         background-color: var(--primary);
                                     }
                                 }
-        
+
                             }
                         }
-                        .bannerImage{
+
+                        .bannerImage {
                             width: 40%;
                             height: 100%;
                             order: 1;
-                            img{
+
+                            img {
                                 width: 100%;
                                 max-width: max-content;
                                 height: 100%;
-                               object-fit: initial;
+                                object-fit: initial;
                             }
                         }
-                       
-    
+
+
                     }
                 }
             }
         }
+
+    }
+    #buildOverview {
+        padding: 50px 0px;
+        // background-image: url('../image/bg-5.jpg');
+        background-color: var(--gray3);
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: var(--alabaster);
     
+        .partsHeader{
+            width: 100%;
+            height: max-content;
+            background-color: var(--gray2);
+            h3 {
+                font-size: 36px;
+                font-family: var(--BebasNeue);
+                color: var(--alabaster);
+                text-align: center;
+            }
+    
+            .navNtab {
+                width: 100%;
+                ol {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0;
+                    align-items: center;
+                    justify-content: center;
+    
+                    li {
+                        margin: 0;
+                        padding: 0;
+                        .tab-btn {
+                            padding: 10px 20px;
+                            border: none;
+                            background: var(--gray2);
+                            color: white;
+                            cursor: pointer;
+                        }
+    
+                        .tab-btn.active {
+                            background: var(--gray3);
+                        }
+                    }
+                }
+            }
+        }
+        .container {
+            width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+            .productControler{
+                width: 100%;
+                margin-top: 30px;
+                padding-top: 15px;
+                background-color: var(--gray2);
+                border-radius: 10px;
+                .urlWarpper{
+                    width: 98%;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        padding-bottom: 10px;
+                        
+                    .urlbox{
+                        width: 100%;
+                        padding: 10px;
+                        padding-left: 10px;
+                        input{
+                            width: 100%;
+                            padding: 0;
+                        }
+                    }
+                    .markUpbox{
+                        width: 100%;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        .markUpIcon{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+                            span{
+                                cursor: pointer;
+                            }
+                        }
+                        .markupBtn{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            .divASbtn{
+                                span{
+                                    font-size: 12px;
+                                    svg{
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .CompitibleNotes{
+                    display: flex;
+                    flex-direction: column;
+                    .greenSection{
+                        font-size: 14px;
+                        width: 100%;
+                        background-color: var(--primary);
+                        display: flex;
+                        padding: 5px 0 0 10px;
+                        gap: 15px;
+                    }
+                    .skySection{
+                        font-size: 14px;
+                        width: 100%;
+                        background-color: #034cb8;
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: 5px 10px 0 0;
+                        gap: 15px;
+                        a{
+                            color: var(--alabaster);
+                        }
+                    }
+                }
+            }
+    
+    
+            .tab_Content_Warpper {
+                .tab-content {
+                    display: none;
+                    padding: 20px;
+                    width: 100%;
+    
+                    .cardWarpper {
+                        display: flex;
+                        gap: 0;
+                        flex-wrap: wrap;
+
+                        .row{
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 2px;
+                            border-bottom: 1px solid gray;
+                            .card{
+                                width: 20%;
+                                padding: 10px 0;
+                                
+                                flex: 1;
+                                .rowHeading{
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    color: gray;
+                                }
+                                .componentName{
+                                    font-size: 16px;
+                                    font-weight: 800;
+                                    color: var(--primary);
+                                }
+                                .selectionBTN{
+                                    padding: 0 10px 5px 10px;
+                                    border-radius: 5px;
+                                    background-color: var(--edward);
+                                    color: #fff;
+                                    &:hover{
+                                        background-color: var(--primary);
+                                        color: var(--alabaster);
+                                    }
+                                }
+                            }
+                            .selection{
+                                flex-grow: 3;
+                            }
+                            &:nth-child(2){
+                                flex-grow: 1;
+                            }
+                        }
+    
+                        .componentCard {
+                            width: 250px;
+                            height: 250px;
+                            border: 1px solid gray;
+                            background-color: #03ad7d31;
+                            border-radius: 10px;
+                            transition: .3s all linear;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #05ffb885;
+                            }
+                        }
+                    }
+                }
+                .tab-content.active {
+                    display: block;
+                }
+            }
+        }
     }
 }
+
 @media only screen and (max-width: 1022px) {
     header {
         nav {
@@ -462,13 +1028,18 @@ header {
         }
     }
 }
+
+
+
+
 // =======all for min width========
-@media (min-width: 600px) {
+@media only screen and (min-width:480px) {
     #Banner_section {
         .swiper {
             .swiper-wrapper {
                 .swiper-slide {
                     padding: 10px;
+
                     .innerSlide {
                         width: 100%;
                         height: max-content;
@@ -477,9 +1048,202 @@ header {
                         align-items: center;
                         padding: 10px;
                         padding-top: 50px;
-                        .bannerText{
+
+                        .bannerText {
                             width: 100%;
                             order: 2;
+
+                            h1 {
+                                font-size: 16vw;
+                                text-align: center;
+                                line-height: 1;
+                                text-transform: uppercase;
+                                color: var(--primary);
+                                font-family: Bebas Neue;
+                                max-width: 100%;
+                                letter-spacing: 5px;
+
+                                span {
+                                    font-family: Bebas Neue;
+                                    color: var(--alabaster);
+                                }
+                            }
+
+                            .btnwarpper {
+                                width: 80%;
+                                margin: 0 auto;
+                                margin-top: 30px;
+
+                                button {
+                                    font-size: 26px;
+                                    padding: 8px;
+                                    cursor: pointer;
+                                    background-color: #004531;
+
+                                    &:hover {
+                                        background-color: var(--primary);
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .bannerImage {
+                            width: 40%;
+                            height: 100%;
+                            order: 1;
+
+                            img {
+                                width: 100%;
+                                max-width: max-content;
+                                height: 100%;
+                                object-fit: initial;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+    }
+    #buildOverview {
+        .container {
+            .productControler{
+                width: 100%;
+                margin-top: 30px;
+                padding-top: 5px;
+                background-color: var(--gray2);
+                border-radius: 10px;
+                .urlWarpper{
+                    width: 98%;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        padding-bottom: 10px;
+                        
+                    .urlbox{
+                        width: 100%;
+                        padding: 10px;
+                        input{
+                            width: 100%;
+                            padding: 0;
+                        }
+                    }
+                    .markUpbox{
+                        width: 100%;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        .markUpIcon{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+                            span{
+                                cursor: pointer;
+                            }
+                        }
+                        .markupBtn{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 20px;
+                            .divASbtn{
+                                span{
+                                    font-size: 12px;
+                                    svg{
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .CompitibleNotes{
+                    display: flex;
+                    flex-direction: column;
+                    .greenSection{
+                        width: 100%;
+                        background-color: green;
+                        display: flex;
+                        padding: 10px;
+                        gap: 15px;
+                    }
+                    .skySection{
+                        width: 100%;
+                        background-color: #034cb8;
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: 10px;
+                        gap: 15px;
+                        a{
+                            color: var(--alabaster);
+                        }
+                    }
+                }
+            }
+    
+    
+            .tab_Content_Warpper {
+                .tab-content {
+                    display: none;
+                    padding: 20px;
+                    width: 100%;
+    
+                    .cardWarpper {
+                        display: flex;
+                        gap: 20px;
+                        flex-wrap: wrap;
+    
+                        .componentCard {
+                            width: 250px;
+                            height: 250px;
+                            border: 1px solid gray;
+                            background-color: #03ad7d31;
+                            border-radius: 10px;
+                            transition: .3s all linear;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #05ffb885;
+                            }
+                        }
+                    }
+                }
+                .tab-content.active {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    #Banner_section {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    padding: 10px;
+
+                    .innerSlide {
+                        width: 100%;
+                        height: max-content;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 10px;
+                        padding-top: 50px;
+
+                        .bannerText {
+                            width: 100%;
+                            order: 2;
+
                             h1 {
                                 font-size: 18vw;
                                 text-align: center;
@@ -489,51 +1253,285 @@ header {
                                 font-family: Bebas Neue;
                                 max-width: 100%;
                                 letter-spacing: 5px;
-        
+
                                 span {
                                     font-family: Bebas Neue;
                                     color: var(--alabaster);
                                 }
                             }
-        
+
                             .btnwarpper {
                                 width: 100%;
                                 margin-top: 30px;
-        
+
                                 button {
                                     font-size: 34px;
                                     cursor: pointer;
                                     background-color: #004531;
-        
+
                                     &:hover {
                                         background-color: var(--primary);
                                     }
                                 }
-        
+
                             }
                         }
-                        .bannerImage{
+
+                        .bannerImage {
                             width: 40%;
                             height: 100%;
                             order: 1;
-                            img{
+
+                            img {
                                 width: 100%;
                                 max-width: max-content;
                                 height: 100%;
-                               object-fit: initial;
+                                object-fit: initial;
                             }
                         }
-                       
-    
+
+
                     }
                 }
             }
         }
-    
+
     }
-    
+
 }
-@media  (min-width: 1024px) {
+
+@media only screen and (min-width: 768px) {
+    #Banner_section {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    padding: 10px;
+
+                    .innerSlide {
+                        width: 100%;
+                        height: max-content;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 10px;
+                        padding-top: 50px;
+
+                        .bannerText {
+                            width: 100%;
+                            order: 2;
+
+                            h1 {
+                                font-size: 18vw;
+                                text-align: center;
+                                line-height: 1;
+                                text-transform: uppercase;
+                                color: var(--primary);
+                                font-family: Bebas Neue;
+                                max-width: 100%;
+                                letter-spacing: 5px;
+
+                                span {
+                                    font-family: Bebas Neue;
+                                    color: var(--alabaster);
+                                }
+                            }
+
+                            .btnwarpper {
+                                width: 100%;
+                                margin-top: 30px;
+
+                                button {
+                                    font-size: 34px;
+                                    cursor: pointer;
+                                    background-color: #004531;
+
+                                    &:hover {
+                                        background-color: var(--primary);
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .bannerImage {
+                            width: 40%;
+                            height: 100%;
+                            order: 1;
+
+                            img {
+                                width: 100%;
+                                max-width: max-content;
+                                height: 100%;
+                                object-fit: initial;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+    }
+    #buildOverview {
+        .container {
+            .productControler{
+                width: 100%;
+                margin-top: 30px;
+                padding-top: 5px;
+                background-color: var(--gray2);
+                border-radius: 10px;
+                .urlWarpper{
+                    .urlbox{
+                        width: 100%;
+                        padding: 10px;
+                        input{
+                            width: 100%;
+                            padding: 0;
+                        }
+                    }
+                    .markUpbox{
+                        width: 100%;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5px;
+                        .markUpIcon{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+                            span{
+                                cursor: pointer;
+                            }
+                        }
+                        .markupBtn{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 20px;
+                            .divASbtn{
+                                span{
+                                    font-size: 12px;
+                                    svg{
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .CompitibleNotes{
+                    display: flex;
+                    flex-direction: row;
+                    .greenSection{
+                        width: 60%;
+                        background-color: green;
+                        display: flex;
+                        padding: 10px;
+                        gap: 15px;
+                    }
+                    .skySection{
+                        width: 40%;
+                        background-color: #034cb8;
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: 10px;
+                        gap: 15px;
+                        a{
+                            color: var(--alabaster);
+                        }
+                    }
+                }
+            }
+    
+    
+            
+        }
+    }
+
+}
+
+@media only screen and (min-width: 922px) {
+    #Banner_section {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    padding: 10px;
+
+                    .innerSlide {
+                        width: 100%;
+                        height: max-content;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 10px;
+                        padding-top: 50px;
+
+                        .bannerText {
+                            width: 100%;
+                            order: 2;
+
+                            h1 {
+                                font-size: 18vw;
+                                text-align: center;
+                                line-height: 1;
+                                text-transform: uppercase;
+                                color: var(--primary);
+                                font-family: Bebas Neue;
+                                max-width: 100%;
+                                letter-spacing: 5px;
+
+                                span {
+                                    font-family: Bebas Neue;
+                                    color: var(--alabaster);
+                                }
+                            }
+
+                            .btnwarpper {
+                                width: 100%;
+                                margin-top: 30px;
+
+                                button {
+                                    font-size: 34px;
+                                    cursor: pointer;
+                                    background-color: #004531;
+
+                                    &:hover {
+                                        background-color: var(--primary);
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .bannerImage {
+                            width: 40%;
+                            height: 100%;
+                            order: 1;
+
+                            img {
+                                width: 100%;
+                                max-width: max-content;
+                                height: 100%;
+                                object-fit: initial;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
     #Banner_section {
         width: 100%;
         height: 100vh;
@@ -541,15 +1539,15 @@ header {
         font-size: 14px;
         margin: 0;
         padding: 0;
-    
+
         .swiper {
             width: 100%;
             height: 100%;
             margin-left: auto;
             margin-right: auto;
-    
+
             .swiper-wrapper {
-    
+
                 .swiper-slide {
                     width: 100%;
                     height: 100%;
@@ -559,7 +1557,7 @@ header {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    
+
                     .innerSlide {
                         width: 100%;
                         height: max-content;
@@ -567,8 +1565,11 @@ header {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        .bannerText{
+
+                        .bannerText {
                             width: 60%;
+                            order: 1;
+
                             h1 {
                                 font-size: 10.5vw;
                                 text-align: left;
@@ -578,75 +1579,277 @@ header {
                                 font-family: Bebas Neue;
                                 max-width: 100%;
                                 letter-spacing: 5px;
-        
+
                                 span {
                                     font-family: Bebas Neue;
                                     color: var(--alabaster);
                                 }
                             }
-        
+
                             .btnwarpper {
                                 width: 40%;
                                 margin-top: 30px;
-        
+                                margin-left: 0;
+
                                 button {
-                                    font-size: 34px;
+                                    font-size: 24px;
                                     cursor: pointer;
                                     background-color: #004531;
-        
+
                                     &:hover {
                                         background-color: var(--primary);
                                     }
                                 }
-        
+
                             }
                         }
-                        .bannerImage{
+
+                        .bannerImage {
                             width: 40%;
                             height: 100%;
-                            img{
+
+                            img {
                                 width: 100%;
                                 max-width: max-content;
                                 height: 100%;
-                               object-fit: initial;
+                                object-fit: initial;
                             }
                         }
-                       
-    
+
+
                     }
                 }
             }
+
+          
+        }
+
+    }
+    #buildOverview {
     
-            .slide1 {
-                background-color: #000099;
-                background-image: url('../image/bg1.jpg');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-    
+        .partsHeader{
+           padding-top: 20px;
+        }
+        .container {
+
+            .productControler{
+                width: 100%;
+                margin-top: 50px;
+                padding-top: 15px;
+                background-color: var(--gray2);
+                border-radius: 10px;
+                .urlWarpper{
+                    width: 98%;
+                        margin: 0 auto;
+                        display: flex;
+                        padding-bottom: 10px;
+                        
+                    .urlbox{
+                        width: 100%;
+                        padding: 0px;
+                        padding-left: 10px;
+                        input{
+                            width: 100%;
+                            padding: 0;
+
+                        }
+                    }
+                    .markUpbox{
+                        width: 100%;
+                        padding: 0;
+                        display: flex;
+                        .markUpIcon{
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 20px;
+                            span{
+                                cursor: pointer;
+                            }
+                        }
+                        .markupBtn{
+                            width: 50%;
+                            display: flex;
+                            gap: 20px;
+                            
+                        }
+                    }
+                }
+                
             }
     
-            .slide2 {
-                background-color: #000099;
-                background-image: url('../image/bg2.jpg');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
     
-            }
+            .tab_Content_Warpper {
+                .tab-content {
+                    display: none;
+                    padding: 20px;
+                    width: 100%;
     
-            .slide3 {
-                background-color: #000099;
-                background: rgb(255, 255, 255);
-                background: rgb(0, 69, 49);
-                background: linear-gradient(204deg, #004531 0%, #00073c 59%, #7e00ab 100%);
+                    .cardWarpper {
+                        display: flex;
+                        gap: 20px;
+                        flex-wrap: wrap;
     
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-    
+                        .componentCard {
+                            width: 250px;
+                            height: 250px;
+                            border: 1px solid gray;
+                            background-color: #03ad7d31;
+                            border-radius: 10px;
+                            transition: .3s all linear;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: #05ffb885;
+                            }
+                        }
+                    }
+                }
+                .tab-content.active {
+                    display: block;
+                }
             }
         }
-    
     }
-  }
+}
+
+@media only screen and (min-width: 1200px) {
+    #Banner_section {
+        width: 100%;
+        height: 100vh;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
+            .swiper-wrapper {
+
+                .swiper-slide {
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 100px;
+                    text-align: center;
+                    font-size: 18px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .innerSlide {
+                        width: 100%;
+                        height: max-content;
+                        padding-left: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        .bannerText {
+                            width: 60%;
+
+                            h1 {
+                                font-size: 10.5vw;
+                                text-align: left;
+                                line-height: 1;
+                                text-transform: uppercase;
+                                color: var(--primary);
+                                font-family: Bebas Neue;
+                                max-width: 100%;
+                                letter-spacing: 5px;
+
+                                span {
+                                    font-family: Bebas Neue;
+                                    color: var(--alabaster);
+                                }
+                            }
+
+                            .btnwarpper {
+                                width: max-content;
+                                margin-top: 30px;
+                                width: 100%;
+
+                                button {
+                                    font-size: 34px;
+                                    width: 100%;
+                                    cursor: pointer;
+                                    background-color: #004531;
+
+                                    &:hover {
+                                        background-color: var(--primary);
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .bannerImage {
+                            width: 40%;
+                            height: calc(100% - 50px);
+
+                            img {
+                                width: 100%;
+                                max-width: max-content;
+                                height: 100%;
+                                object-fit: initial;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+          
+        }
+
+    }
+    #buildOverview {
+        padding: 50px 0px;
+        // background-image: url('../image/bg-5.jpg');
+        background-color: var(--gray3);
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: var(--alabaster);
+    
+        .partsHeader{
+            padding-top: 30px;
+        }
+        .container {
+            width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+            .productControler{
+                width: 100%;
+                margin-top: 50px;
+                padding-top: 10px;
+                background-color: var(--gray2);
+                border-radius: 10px;
+                .urlWarpper{
+                    width: 98%;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        padding-bottom: 10px;
+                }
+                .CompitibleNotes{
+                    .greenSection{
+                        width: 80%;
+                        padding: 0;
+                        padding-top: 5px;
+                        padding-left: 10px;
+                    }
+                    .skySection{
+                        width: 20%;
+                        padding: 0;
+                        padding-top: 5px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

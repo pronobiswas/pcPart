@@ -4,7 +4,10 @@
   --codgray:#070707;
   --edward:#9FB4B0;
   --gray:#848484;
+  --gray2:#3D3D54;
+  --gray3:#282838;
   --Manrope : "Manrope";
+  --BebasNeue:'Bebas Neue';
 }
 *{
     margin: 0;
@@ -29,6 +32,11 @@ a{
 }
 ul,ol{
   list-style-type: none;
+}
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 /* #Banner_section{
     width: 100%;
@@ -66,3 +74,15 @@ ul,ol{
     margin-right: auto;
   }
   */
+
+
+  /* ======for js element only====== */
+  .itemWarpper{
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
