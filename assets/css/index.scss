@@ -226,7 +226,8 @@ header {
                             button {
                                 font-size: 34px;
                                 cursor: pointer;
-                                background-color: #004531;
+                                background-color: #25AC94;
+                                border:  2px solid green;
 
                                 &:hover {
                                     background-color: var(--primary);
@@ -295,6 +296,7 @@ header {
     background-color: #236bd8;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     .itemcard{
         width: 300px;
         height: max-content;
@@ -304,6 +306,11 @@ header {
             width: 100%;
             height: 220px;
             background-color: white;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .product_title{
             width: 100%;
@@ -442,6 +449,7 @@ header {
             }
         }
     }
+    // ======choose component=========
     .container {
         width: 100%;
         max-width: 90%;
@@ -527,7 +535,7 @@ header {
                     display: flex;
                     justify-content: flex-end;
                     gap: 15px;
-                    padding: 5px 15px;
+                    padding: 5px  15px;
                     a{
                         color: var(--alabaster);
                         &:hover{
@@ -548,7 +556,7 @@ header {
 
                 .cardWarpper {
                     display: flex;
-                    gap: 0 !important;
+                    gap: 20px;
                     flex-wrap: wrap;
                     .row{
                         width: 100%;
@@ -603,10 +611,11 @@ header {
                     }
                 }
                 .cardContiner{
-                    
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
                     .componentCard {
                         width: max-content;
-                        // height: 200px;
                         border: 1px solid #25AC94;
                         // background-color: #25ac9341;
                         background-image: url('../image/cardBg.png');
@@ -765,12 +774,6 @@ header {
                                 button {
                                     font-size: 26px;
                                     padding: 8px;
-                                    cursor: pointer;
-                                    background-color: #004531;
-
-                                    &:hover {
-                                        background-color: var(--primary);
-                                    }
                                 }
 
                             }
@@ -1077,12 +1080,6 @@ header {
                                 button {
                                     font-size: 26px;
                                     padding: 8px;
-                                    cursor: pointer;
-                                    background-color: #004531;
-
-                                    &:hover {
-                                        background-color: var(--primary);
-                                    }
                                 }
 
                             }
@@ -1266,12 +1263,6 @@ header {
 
                                 button {
                                     font-size: 34px;
-                                    cursor: pointer;
-                                    background-color: #004531;
-
-                                    &:hover {
-                                        background-color: var(--primary);
-                                    }
                                 }
 
                             }
@@ -1342,12 +1333,6 @@ header {
 
                                 button {
                                     font-size: 34px;
-                                    cursor: pointer;
-                                    background-color: #004531;
-
-                                    &:hover {
-                                        background-color: var(--primary);
-                                    }
                                 }
 
                             }
@@ -1376,11 +1361,6 @@ header {
     #buildOverview {
         .container {
             .productControler{
-                width: 100%;
-                margin-top: 30px;
-                padding-top: 5px;
-                background-color: var(--gray2);
-                border-radius: 10px;
                 .urlWarpper{
                     .urlbox{
                         width: 100%;
@@ -1429,9 +1409,9 @@ header {
                     flex-direction: row;
                     .greenSection{
                         width: 60%;
-                        background-color: green;
+                        background-color: var(--primary);
                         display: flex;
-                        padding: 10px;
+                        padding: 5px 10px 0 5px;
                         gap: 15px;
                     }
                     .skySection{
@@ -1439,7 +1419,7 @@ header {
                         background-color: #034cb8;
                         display: flex;
                         justify-content: flex-end;
-                        padding: 10px;
+                        padding: 5px 10px 0 5px;
                         gap: 15px;
                         a{
                             color: var(--alabaster);
@@ -1497,12 +1477,6 @@ header {
 
                                 button {
                                     font-size: 34px;
-                                    cursor: pointer;
-                                    background-color: #004531;
-
-                                    &:hover {
-                                        background-color: var(--primary);
-                                    }
                                 }
 
                             }
@@ -1593,12 +1567,6 @@ header {
 
                                 button {
                                     font-size: 24px;
-                                    cursor: pointer;
-                                    background-color: #004531;
-
-                                    &:hover {
-                                        background-color: var(--primary);
-                                    }
                                 }
 
                             }
@@ -1773,14 +1741,7 @@ header {
 
                                 button {
                                     font-size: 34px;
-                                    width: 100%;
-                                    cursor: pointer;
-                                    background-color: #004531;
-
-                                    &:hover {
-                                        background-color: var(--primary);
-                                    }
-                                }
+                                    width: 100%;}
 
                             }
                         }
