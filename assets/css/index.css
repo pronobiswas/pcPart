@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 header {
   width: 100%;
   height: -moz-fit-content;
@@ -613,6 +617,68 @@ header nav .asideMenu ul li a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid red;
+}
+
+#footer {
+  width: 100%;
+  background-color: rgba(0, 11, 12, 0.9725490196);
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(0, 44, 29) 0%, rgb(0, 51, 54) 50%, rgb(0, 0, 0) 100%);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 350%;
+  padding: 30px 0;
+  color: #fff;
+}
+#footer .footer-warper .footer-logo {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#footer .footer-warper .footer-logo img {
+  width: 150px;
+  height: 95px;
+}
+#footer .footer-warper .footer-contact address.address {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+#footer .footer-warper .footer-contact address.address a {
+  color: #fff;
+}
+#footer .footer-warper .footer-contact .social-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+#footer .footer-warper .footer-contact .social-container .social-icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 0.8 !important;
+  cursor: pointer;
+}
+#footer .footer-warper .footer-contact .social-container .social-icon svg {
+  padding: 0;
+  line-height: 0.8;
+}
+#footer .footer-warper .footer-contact .social-container .fb-icon {
+  cursor: pointer;
+}
+#footer .copyright {
+  text-align: center;
 }
 
 /* Extra small devices (phones, 600px and down) */
