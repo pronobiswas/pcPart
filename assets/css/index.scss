@@ -709,6 +709,35 @@ header {
         }
     }
 }
+// ===product_list_modal===
+#product_list_modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 9999;
+    .cancel{
+        background-color: red;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #productList{
+        width: 100%;
+        height: 100%;
+        background-color: #000099;
+    }
+}
 // ======footer section======
 #footer{
     width: 100%;

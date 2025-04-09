@@ -347,6 +347,13 @@
 
                 <!-- =====over view======= -->
                 <div id="tab1" class="tab-content active">
+                    <!-- ~~~modal~~~ -->
+                    <div id="product_list_modal" class="hidden">
+                        <div class="cancel" id="close_product_list">x</div>
+                        <div id="productList">
+                        </div>
+                    </div>
+                    <!-- ~~~modal~~~ -->
                     Content for Tab 1
                     <div class="cardWarpper">
                         <!-- =======row heading===== -->
@@ -388,10 +395,7 @@
                                 <span class="componentName">CPU</span>
                             </div>
                             <div class="selection card">
-                                <button class="selectionBTN">
-                                    <span style='font-size:20px;'>&#43;</span>
-                                    <span>Chose a CPU</span>
-                                </button>
+                                <button class="selectionBTN" data-selection-name="cpu" onclick="handleComponents(event)">+Chose a CPU</button>
                             </div>
                             <div class="base card"></div>
                             <div class="promo card"></div>
@@ -408,7 +412,7 @@
                                 <span class="componentName">CPU Cooler</span>
                             </div>
                             <div class="selection card">
-                                <button class="selectionBTN">
+                                <button class="selectionBTN" data-selection-name="cpuCooler" onclick="handleComponents(event)">
                                     <span style='font-size:20px;'>&#43;</span>
                                     <span>Choose A CPU Cooler</span>
                                 </button>
@@ -428,7 +432,7 @@
                                 <span class="componentName">Motherboard</span>
                             </div>
                             <div class="selection card">
-                                <button class="selectionBTN">
+                                <button class="selectionBTN" data-selection-name="Motherboard" onclick="handleComponents(event)">
                                     <span style='font-size:20px;'>&#43;</span>
                                     <span>Choose A Motherboard</span>
                                 </button>
@@ -731,7 +735,7 @@
     </footer>
 
 
-
+    
 
     <!-- =======script form swiper js====== -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -784,8 +788,9 @@
         AOS.init();
     </script>
     <!-- ====own script======= -->
-    <script src="./assets/js/productsCard.js"></script>
-    <script src="./assets/js/mainScript.js"></script>
+    <!-- <script src="./assets/js/productsCard.js"></script> -->
+    <script  src="./assets/js/mainScript.js"></script>
+    <script src="./assets/js/productListModal.js"></script>
 </body>
 
 </html>

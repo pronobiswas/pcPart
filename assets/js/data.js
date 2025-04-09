@@ -60,5 +60,65 @@ const pcPart = {
 
     }
 ]
-
-
+const prosesor = [
+    {
+      title: "AMD Ryzen 7 5700X 8-Core, 16-Thread Unlocked Desktop Processor",
+      image: "https://m.media-amazon.com/images/I/3116WnNTPKL._SL500_.jpg",
+      price: "$151.32",
+      url: "https://www.amazon.com/dp/B09VCHQHZ6?tag=pcbuildpartscom-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      title: "AMD Ryzen 5 5500 6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
+      image: "https://m.media-amazon.com/images/I/31EzTuimorL._SL500_.jpg",
+      price: "$80.99",
+      url: "https://www.amazon.com/dp/B09VCJ171S?tag=pcbuildpartscom-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      title: "AMD Ryzen™ 9 9900X 12-Core, 24-Thread Unlocked Desktop Processor",
+      image: "https://m.media-amazon.com/images/I/41k-qInPV7L._SL500_.jpg",
+      price: "$407.45",
+      url: "https://www.amazon.com/dp/B0D6NN87T8?tag=pcbuildpartscom-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      title: "AMD Ryzen™ 7 9700X 8-Core, 16-Thread Unlocked Desktop Processor",
+      image: "https://m.media-amazon.com/images/I/41tUy4Z4RpL._SL500_.jpg",
+      price: "$329.00",
+      url: "https://www.amazon.com/dp/B0D6NMDNNX?tag=pcbuildpartscom-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      title: "Intel Core i7-12700KF Desktop Processor 12 (8P+4E) Cores up to 5.0 GHz Unlocked LGA1700 600 Series Chipset 125W",
+      image: "https://m.media-amazon.com/images/I/41S0TSQIjsL._SL500_.jpg",
+      price: "$189.99",
+      url: "https://www.amazon.com/dp/B09FXKHN7M?tag=pcbuildpartscom-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      title: "AMD Ryzen 5 7600X 6-Core, 12-Thread Unlocked Desktop Processor",
+      image: "https://m.media-amazon.com/images/I/21HJPNaWRnL._SL500_.jpg",
+      price: "$197.00",
+      url: "https://www.amazon.com/dp/B0BBJDS62N?tag=pcbuildpartscom-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      title: "AMD Ryzen 7 5700 8-Core, 16-Thread Desktop Processor",
+      image: "https://m.media-amazon.com/images/I/41mG-9GZkCL._SL500_.jpg",
+      price: "$126.80",
+      url: "https://www.amazon.com/dp/B0CQ4HPJYV?tag=pcbuildpartscom-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      title: "AMD Ryzen 7 5800X 8-core, 16-thread unlocked desktop processor",
+      image: "https://m.media-amazon.com/images/I/41t0HDY4O+L._SL500_.jpg",
+      price: "$170.99",
+      url: "https://www.amazon.com/dp/B0815XFSGK?tag=pcbuildpartscom-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      title: "AMD RYZEN 7 9800X3D 8-Core, 16-Thread Desktop Processor",
+      image: "https://m.media-amazon.com/images/I/41ArEZ7Rm6L._SL500_.jpg",
+      price: "$479.00",
+      url: "https://www.amazon.com/dp/B0DKFMSMYK?tag=pcbuildpartscom-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      title: "Intel® CoreTM i5-14600K New Gaming Desktop Processor 14 (6 P-cores + 8 E-cores) with Integrated Graphics - Unlocked",
+      image: "https://m.media-amazon.com/images/I/41ab2q5sgsL._SL500_.jpg",
+      price: "$208.00",
+      url: "https://www.amazon.com/dp/B0CGJ9STNF?tag=pcbuildpartscom-20&linkCode=osi&th=1&psc=1"
+    }
+  ];

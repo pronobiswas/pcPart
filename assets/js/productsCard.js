@@ -34,6 +34,3 @@ function generateProductCards() {
 
 // Call function to generate products
 window.onload = generateProductCards;
-
-
-console.log("this from product card");
